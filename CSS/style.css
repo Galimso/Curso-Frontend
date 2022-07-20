@@ -1,0 +1,215 @@
+/* Arquivo CSS geral com estilos dos elementos de todas paginas */
+* {
+			  margin: 0;
+			  padding: 0;
+			  background-color: #23232e;
+			}
+
+			.header {
+				border-bottom: 2px solid #3e6a9c;				
+			}			
+
+			a,h3{color: #fff;
+				text-decoration: none;
+				transition: 0.3s;				
+				}
+
+			h1{
+				color: #fff;
+				transition: 0.3s;
+				text-align: center;
+				margin-top: 32px;
+				margin-bottom: 32px;
+
+			}	
+			a:hover {
+				opacity: 0.7;
+				color: #009;
+				transition: 0.5s;
+				background: rgb(236, 228, 228);
+				font-weight: bold;
+			}
+
+			.logo {
+				font-size: 24px;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				
+			}
+			nav {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				font-family: system-ui,
+				-apple-system, helvetica, arial, sans-serif;
+				background: #23232e;
+				height: 8vh;
+			}
+
+			main {
+				background: url("../Imagens/fundo-cinza-escuro31.webp");
+				background-size: cover;
+				height: 92vh;
+			}
+
+			.nav-list {
+				list-style: none;
+				display: inline-flex;				
+			}
+
+			.nav-list li { 
+				letter-spacing: 3px;
+				margin-left: 32px;
+			 }
+
+			 
+
+			label{ 
+			font-weight: bold;
+			font-display: block; 
+			margin-bottom: 1rem;
+			color: #23232e			
+		     }	
+					
+			section::after {
+			  background: #23232e;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			
+			footer {
+			  background-color: #23232e;
+			  padding: 10px;
+			  text-align: center;
+			  color: #774caf;
+			  font-weight: bold;
+			  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			  padding-top: 20%;
+			}
+
+			
+			@media (max-width: 770px) {
+			  nav, article,div {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			@media (max-width: 425px) {
+				nav, article,div {
+				  width: 100%;
+				  height: auto;
+				}
+			}
+			@media (min-width: 420px) {
+				nav, article,div {
+				  width: 100%;
+				  height: auto;
+				}
+			  }
+			/* top (cima)
+				bottom(baixo)
+				left(esquerda)
+				right(direta)
+				*/
+			 div {
+				float: left;
+				padding: 20px;
+				width: 20%;
+				margin-top: 50px;
+				}
+			form div {
+				margin: 10px 20px 20px 10px;
+				padding: 20px;
+				background: #fff;
+				border: 0;
+				border-bottom: 1px solid rgb(69, 132, 153);
+				display: block;
+				 /* Ordem TOP,right,down,left */ 
+				 position: relative;
+				 margin: 5px;}
+			article {
+			  float: center;
+			  padding: 20px;
+			  width: 70%;
+			  margin-top: 40px;
+			
+			 
+			 
+			}
+			ul {
+				list-style: none;
+				font-family: system-ui,
+				 helvetica, arial, sans-serif;
+				
+			}
+			
+			h2 {
+				font-family: cursive;
+				font-style: italic;
+			}
+
+			img{
+				border-radius: 50%;
+				
+			}
+			.button {
+				background-color: #774caf; 
+				border: 2px solid #3e6a9c;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;}
+			.button :hover{
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+			       }	
+		    form {
+					font-family: Verdana,Tahoma,sans-serif;
+					font-size: 15px;
+					background-color: #23232e;
+					max-width: 500px;
+				}	   
+			input, textarea {
+					width: 200px;
+					padding: 10px;
+					color: black;
+					margin-left: 20px;
+					margin-top: 10px;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border: 1px solid;
+				}
+			input:hover, textarea:hover, input:focus, textarea:focus {
+					border-color: #000066;
+					box-shadow: 5px 0px 9px #774caf;
+					background-color: #fff;
+					color: black;
+					font-weight: bold;
+				}
+
+			.enviar {
+					background-color: #774caf;
+					height: 40px;
+					width: 100px;
+					font-weight: bold;
+					border-radius: 5px;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border: 1px solid;
+					color: black; }
+			textarea {
+						width: 400px;
+						height: 120px;
+						line-height: 20px;
+						max-width: 400px;
+					}
+					
+			form label {
+						margin-left: 20px;
+						color: #FFFFFF;
+						font-weight: bold;
+					}
